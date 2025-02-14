@@ -18,6 +18,10 @@
             height: 100vh;
             background-color: black;
           }
+
+          #heart {
+            width: 300px;
+          }
         </style>
     </head>
     <body>
@@ -26,9 +30,9 @@
         <script>
           nextParticle = new NextParticle({
             image: document.all.heart,
-            width: window.innerWidth / 2,
-            height: window.innerHeight / 2,
-            maxWidth: window.innerWidth * 0.8,
+            width: window.innerWidth,
+            height: window.innerHeight,
+            maxWidth: window.innerWidth * 0.9,
             particleGap: 2,
             noise: 5
           })
