@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+          * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+          }
+
+          body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: black;
+          }
+        </style>
+    </head>
+    <body>
+        <img id="heart" src="heart.jpg" alt="heart" />
+        <script src="https://nextparticle.nextco.de/nextparticle.min.js"></script>
+        <script>
+          nextParticle = new NextParticle({
+            image: document.all.heart,
+            width: window.innerWidth / 2,
+            height: window.innerHeight / 2,
+            maxWidth: window.innerWidth * 0.8,
+            particleGap: 2,
+            noise: 5
+          })
+        </script>
+    </body>
+</html>
